@@ -16,5 +16,5 @@
 * Travel
 
 ## Websites I recommend
-1. [GitHub](www.github.com) - It's great for developers to share their work
-2. [CrunchyRoll](www.crunchyroll.com) - Great place to watch anime
+1. [GitHub](https://www.github.com) - It's great for developers to share their work
+2. [CrunchyRoll](https://www.crunchyroll.com) - Great place to watch anime
