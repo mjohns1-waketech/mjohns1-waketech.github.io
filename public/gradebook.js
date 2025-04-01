@@ -41,3 +41,5 @@ function populateGradebook(data) {
 			tableElm.appendChild(row);
 		});
 	}
+	const gradeData = fetchGradeData();
+	populateGradebook(gradeData);
