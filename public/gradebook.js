@@ -38,8 +38,8 @@ function populateGradebook(data){
 			row.appendChild(columns.name);
 			row.appendChild(columns.grade);
 			tableElm.appendChild(row);
-		}
-		}
+		});
+	};
 
 const gradeData = fetchGradeData();
 populateGradebook(gradeData);
