@@ -22,8 +22,8 @@ function fetchGradeData(){
 	xhr.open("get", apiRoute, true);
 	xhr.send();
 }
-function populateGradebook(data){
-	console.log("Populating gradebook with data:", data);
+function populateGradebook(data-){
+	console.log("Populating gradebook with data:", data-);
 	let tableElm = document.getElementById("gradebook");
 		data.forEach(function(assignment) {
 			let row = document.createElement("tr");
