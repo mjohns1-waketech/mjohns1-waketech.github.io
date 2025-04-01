@@ -42,5 +42,4 @@ function populateGradebook(data){
 		});
 	};
 
-
-populateGradebook(gradeData);
+populateGradebook();
