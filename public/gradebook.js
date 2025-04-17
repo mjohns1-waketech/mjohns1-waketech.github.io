@@ -12,16 +12,17 @@ function fetchGradeData() {
 		if (xhr.readyState === xhr.DONE){
 			// Check if we're successful
 			if(xhr.status !== 200){
-				console.error(`Could not get grades.Status: ${xhr.status}`);
-				
-			}
+				console.error(`Could not get grades.
+					Status: ${xhr.status}`);
+				}
 			
 			populateGradebook(JSON.parse(xhr.responseText));
-		}
+			}
 	}.bind(this);
 	xhr.open("get", apiRoute, true);
 	xhr.send();
 }
+
 function populateGradebook(data) {
 	console.log("Populating gradebook with data:", data);
 	let tableElm = document.getElementById("gradebook");
@@ -41,5 +42,6 @@ function populateGradebook(data) {
 			tableElm.appendChild(row);
 		});
 	}
-	const gradeData = fetchGradeData();
+	
+	let gradeData = fetchGradeData();
 	populateGradebook(gradeData);
